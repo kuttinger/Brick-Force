@@ -122,6 +122,11 @@ namespace _Emulator
 
         public void SendPacket(ushort id, MsgBody msgBody, bool doChunked)
         {
+            if (AuroraConnection.Active)
+            {
+                // The chunked buffer opcodes collide with the Aurora protocol, the standalone server accepts large packets directly
+                doChunked = false;
+            }
             if (isSteam)
             {
                 SteamNetworkingManager.instance.SendMessageToHost(new Msg4Send(id, uint.MaxValue, uint.MaxValue, msgBody, CSNetManager.Instance.Sock.GetSendKey()));
@@ -286,6 +291,11 @@ namespace _Emulator
 
         public void Say(ExtensionOpcodes id, MsgBody msgBody = null, bool doChunked = true)
         {
+            if (AuroraConnection.Active)
+            {
+                // Emulator extension opcodes mean something else on an Aurora standalone server
+                return;
+            }
             if (msgBody == null)
                 msgBody = new MsgBody();
             CSNetManager.Instance.Sock.Say((ushort)id, msgBody, doChunked);
@@ -354,6 +364,10 @@ namespace _Emulator
             receivedAnswer = true;
             if (ServerEmulator.instance.debugSend)
                 Debug.Log($"[Verbose/Client] Processing message ID: {msg._id}");
+            if (AuroraConnection.instance != null && AuroraConnection.instance.HandleMessage(msg))
+            {
+                return true;
+            }
             if (!_handlers.ContainsKey(msg._id))
             {
                 return false;

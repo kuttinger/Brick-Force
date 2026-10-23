@@ -800,6 +800,7 @@
     <Compile Include="_Emulator\Network\Gamemodes\PlayZombie.cs" />
     <Compile Include="_Emulator\Network\ShopEmulator.cs" />
     <Compile Include="_Emulator\Network\Extension\ClientExtension.cs" />
+    <Compile Include="_Emulator\Network\Aurora\AuroraConnection.cs" />
     <Compile Include="_Emulator\Network\ClientReference.cs" />
     <Compile Include="_Emulator\Network\Extension\ExtensionOpcodes.cs" />
     <Compile Include="_Emulator\Network\Inventory.cs" />
