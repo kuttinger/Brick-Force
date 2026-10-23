@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <ProjectGuid>{1EDA9103-BCA4-4E5B-8A4C-56973646003F}</ProjectGuid>
@@ -34,19 +34,19 @@
     <Optimize>true</Optimize>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
-    <OutputPath>$(LocalAppData)\BrickForce Aurora\game\BrickForce_Data\Managed\</OutputPath>
+    <OutputPath>$(LocalAppData)\BrickForce Aurora\game\aurora\BrickForce_Data\Managed\</OutputPath>
     <Prefer32Bit>false</Prefer32Bit>
     <DefineConstants>
     </DefineConstants>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug-mdb|AnyCPU'">
-    <OutputPath>$(LocalAppData)\BrickForce Aurora\game\BrickForce_Data\Managed\</OutputPath>
+    <OutputPath>$(LocalAppData)\BrickForce Aurora\game\aurora\BrickForce_Data\Managed\</OutputPath>
     <Prefer32Bit>false</Prefer32Bit>
     <DefineConstants>
     </DefineConstants>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
-    <OutputPath>$(LocalAppData)\BrickForce Aurora\game\BrickForce_Data\Managed\</OutputPath>
+    <OutputPath>$(LocalAppData)\BrickForce Aurora\game\aurora\BrickForce_Data\Managed\</OutputPath>
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
@@ -843,50 +843,50 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Assembly-CSharp-firstpass">
-      <HintPath>$(LocalAppData)\BrickForce Aurora\game\BrickForce_Data\Managed\Assembly-CSharp-firstpass.dll</HintPath>
+      <HintPath>$(LocalAppData)\BrickForce Aurora\game\aurora\BrickForce_Data\Managed\Assembly-CSharp-firstpass.dll</HintPath>
     </Reference>
     <Reference Include="Assembly-UnityScript">
-      <HintPath>$(LocalAppData)\BrickForce Aurora\game\BrickForce_Data\Managed\Assembly-UnityScript.dll</HintPath>
+      <HintPath>$(LocalAppData)\BrickForce Aurora\game\aurora\BrickForce_Data\Managed\Assembly-UnityScript.dll</HintPath>
     </Reference>
     <Reference Include="Assembly-UnityScript-firstpass">
-      <HintPath>$(LocalAppData)\BrickForce Aurora\game\BrickForce_Data\Managed\Assembly-UnityScript-firstpass.dll</HintPath>
+      <HintPath>$(LocalAppData)\BrickForce Aurora\game\aurora\BrickForce_Data\Managed\Assembly-UnityScript-firstpass.dll</HintPath>
     </Reference>
     <Reference Include="Boo.Lang">
-      <HintPath>C$(LocalAppData)\BrickForce Aurora\game\BrickForce_Data\Managed\Boo.Lang.dll</HintPath>
+      <HintPath>$(LocalAppData)\BrickForce Aurora\game\aurora\BrickForce_Data\Managed\Boo.Lang.dll</HintPath>
     </Reference>
     <Reference Include="EasyHook">
-      <HintPath>$(LocalAppData)\BrickForce Aurora\game\BrickForce_Data\Managed\EasyHook.dll</HintPath>
+      <HintPath>$(LocalAppData)\BrickForce Aurora\game\aurora\BrickForce_Data\Managed\EasyHook.dll</HintPath>
     </Reference>
     <Reference Include="ICSharpCode.SharpZipLib">
-      <HintPath>$(LocalAppData)\BrickForce Aurora\game\ICSharpCode.SharpZipLib.dll</HintPath>
+      <HintPath>$(LocalAppData)\BrickForce Aurora\game\aurora\ICSharpCode.SharpZipLib.dll</HintPath>
     </Reference>
     <Reference Include="ImGui.NET">
-      <HintPath>$(LocalAppData)\BrickForce Aurora\game\BrickForce_Data\Managed\ImGui.NET.dll</HintPath>
+      <HintPath>$(LocalAppData)\BrickForce Aurora\game\aurora\BrickForce_Data\Managed\ImGui.NET.dll</HintPath>
     </Reference>
     <Reference Include="LitJSON">
-      <HintPath>$(LocalAppData)\BrickForce Aurora\game\BrickForce_Data\Managed\LitJSON.dll</HintPath>
+      <HintPath>$(LocalAppData)\BrickForce Aurora\game\aurora\BrickForce_Data\Managed\LitJSON.dll</HintPath>
     </Reference>
     <Reference Include="Mono.Security">
-      <HintPath>$(LocalAppData)\BrickForce Aurora\game\BrickForce_Data\Managed\Mono.Security.dll</HintPath>
+      <HintPath>$(LocalAppData)\BrickForce Aurora\game\aurora\BrickForce_Data\Managed\Mono.Security.dll</HintPath>
     </Reference>
     <Reference Include="Steamworks.NET">
-      <HintPath>$(LocalAppData)\BrickForce Aurora\game\BrickForce_Data\Managed\Steamworks.NET.dll</HintPath>
+      <HintPath>$(LocalAppData)\BrickForce Aurora\game\aurora\BrickForce_Data\Managed\Steamworks.NET.dll</HintPath>
     </Reference>
     <Reference Include="System">
-      <HintPath>$(LocalAppData)\BrickForce Aurora\game\BrickForce_Data\Managed\System.dll</HintPath>
+      <HintPath>$(LocalAppData)\BrickForce Aurora\game\aurora\BrickForce_Data\Managed\System.dll</HintPath>
     </Reference>
     <Reference Include="System.Core">
-      <HintPath>$(LocalAppData)\BrickForce Aurora\game\BrickForce_Data\Managed\System.Core.dll</HintPath>
+      <HintPath>$(LocalAppData)\BrickForce Aurora\game\aurora\BrickForce_Data\Managed\System.Core.dll</HintPath>
     </Reference>
     <Reference Include="System.Data" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Runtime.Remoting" />
     <Reference Include="System.Xml" />
     <Reference Include="UnityEngine">
-      <HintPath>$(LocalAppData)\BrickForce Aurora\game\BrickForce_Data\Managed\UnityEngine.dll</HintPath>
+      <HintPath>$(LocalAppData)\BrickForce Aurora\game\aurora\BrickForce_Data\Managed\UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityScript.Lang">
-      <HintPath>$(LocalAppData)\BrickForce Aurora\game\BrickForce_Data\Managed\UnityScript.Lang.dll</HintPath>
+      <HintPath>$(LocalAppData)\BrickForce Aurora\game\aurora\BrickForce_Data\Managed\UnityScript.Lang.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
